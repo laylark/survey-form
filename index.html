@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="app.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Great+Vibes&family=Overpass:wght@300&family=Red+Hat+Mono&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+        <title>Course Evaluation</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 id="title">Course Evaluation</h1>
+            <p id="description">Please submit feedback regarding the course you have just completed, including feedback on course structure, content, and instructor.</p>
+        </header>
+        <form id="survey-form">
+            <div id="student-class-info">
+                <div>
+                    <label for="name" id="name-label">
+                        Name:
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="email" id="email-label">
+                        Email:
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="email@address.com" required>
+                </div>
+                <div>
+                    <label for="number" id="number-label">
+                        Age (optional):
+                    </label>
+                    <input type="number" name="age" id="number" placeholder="Age" min="15" max="99">
+                </div>
+                <div>
+                    <label for="course" id="course-label">
+                        Course name:
+                    </label>
+                    <input type="text" name="course" id="course" placeholder="Enter course name" required>
+                </div>
+                <div>
+                    <label for="instructor" id="instructor-label">
+                        Instructor:
+                    </label>
+                    <input type="text" name="instructor" id="instructor" placeholder="Enter instructor's name" required>
+                </div>
+                <div>
+                    <label for="dropdodwn" id="dropdown-label">
+                        Which option is your current class standing?
+                    </label>
+                    <select id="dropdown" name="class" required>
+                        <option selected disabled>Select current standing</option>
+                        <option value="freshman">Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                        <option value="grad">Grad</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-item">
+                <p>
+                    1. Instructor available outside of class.
+                </p>
+                <label>
+                    <input name="instructor-available" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="instructor-available" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="instructor-available" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="instructor-available" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="instructor-available" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    2. Syllabus covered course essentials.
+                </p>
+                <label>
+                    <input name="covered-course-essentials" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="covered-course-essentials" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="covered-course-essentials" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="covered-course-essentials" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="covered-course-essentials" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    3. Critical thinking encouraged.
+                </p>
+                <label>
+                    <input name="critical-thinking" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="critical-thinking" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="critical-thinking" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="critical-thinking" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="critical-thinking" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    4. Variety of instructional formats used.
+                </p>
+                <label>
+                    <input name="variety-formats" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="variety-formats" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="variety-formats" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="variety-formats" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="variety-formats" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    5. Instructional methods facilitated understanding.
+                </p>
+                <label>
+                    <input name="facilitated-understanding" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="facilitated-understanding" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="facilitated-understanding" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="facilitated-understanding" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="facilitated-understanding" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    6. Asking questions was encouraged.
+                </p>
+                <label>
+                    <input name="questions-encouraged" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="questions-encouraged" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="questions-encouraged" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="questions-encouraged" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="questions-encouraged" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    7. Constructive answers given to questions.
+                </p>
+                <label>
+                    <input name="constructive-answers" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="constructive-answers" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="constructive-answers" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="constructive-answers" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="constructive-answers" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    8. Working in groups encouraged.
+                </p>
+                <label>
+                    <input name="group-work" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="group-work" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="group-work" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="group-work" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="group-work" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    9. Writing required in this course.
+                </p>
+                <label>
+                    <input name="writing-required" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="writing-required" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="writing-required" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="writing-required" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="writing-required" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    10. Grading criteria provided.
+                </p>
+                <label>
+                    <input name="grading-provided" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="grading-provided" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="grading-provided" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="grading-provided" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="grading-provided" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    11. Instructor feedback helpful.
+                </p>
+                <label>
+                    <input name="helpful-feedback" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="helpful-feedback" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="helpful-feedback" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="helpful-feedback" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="helpful-feedback" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    12. Class time well used.
+                </p>
+                <label>
+                    <input name="class-time" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="class-time" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="class-time" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="class-time" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="class-time" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    13. High academic standards set by instructor.
+                </p>
+                <label>
+                    <input name="high-standards" value="strongly-disagree" type="radio">
+                    Strongly Disagree
+                </label>
+                <label>
+                    <input name="high-standards" value="disagree" type="radio">
+                    Disagree
+                </label>
+                <label>
+                    <input name="high-standards" value="neutral" type="radio">
+                    Neutral
+                </label>
+                <label>
+                    <input name="high-standards" value="agree" type="radio">
+                    Agree
+                </label>
+                <label>
+                    <input name="high-standards" value="strongly-agree" type="radio">
+                    Strongly Agree
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    Why did you choose this course?
+                </p>
+                <label>
+                    <input name="choose-course" value="degree-requirement" type="checkbox">
+                    Degree requirement
+                </label>
+                <label>
+                    <input name="choose-course" value="interest" type="checkbox">
+                    Interest
+                </label>
+                <label>
+                    <input name="choose-course" value="time-offered" type="checkbox">
+                    Time offered
+                </label>
+            </div>
+            <div class="form-item">
+                <p>
+                    Any comments or suggestions to improve this course?
+                </p>
+                <textarea id="comments" placeholder="Enter your comments here...">
+                </textarea>
+            </div>
+            <div class="form-item">
+                <button type="submit" id="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <footer>
+            &copy; 2022 Layla Krauss. All Rights Reserved.
+        </footer>
+    </body>
+</html>

@@ -84,6 +84,9 @@ footer {
     padding-bottom: 1em;
 }
 @media (max-width: 480px) {
+    body {
+        background-image: linear-gradient(115deg, rgba(91, 155, 230, 0.7), rgba(19, 117, 230, 0.6));
+    }
     #title {
         font-size: 2.5em;
     }
